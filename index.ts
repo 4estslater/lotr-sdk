@@ -5,7 +5,7 @@ const ACCESS_TOKEN: string = 'LrzN3JnAO8C4_Z4-ot9G';
 
 axios.defaults.headers.common['Authorization'] = `Bearer ${ACCESS_TOKEN}`;
 
-export function getMovies(filter?: string): Promise<object> {
+export function getMovies(): Promise<object> {
   return new Promise((resolve, reject) => {
     axios
       .get(`${API_URL}/movie`)
@@ -38,7 +38,7 @@ export function getQuotesByMovieId(id: string): Promise<object> {
   });
 }
 
-export function getQuotes(filter?: string): Promise<object> {
+export function getQuotes(): Promise<object> {
   return new Promise((resolve, reject) => {
     axios
       .get(`${API_URL}/quote`)

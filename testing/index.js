@@ -1,6 +1,6 @@
 const lotrSdk = require('lotr-sdk');
 
-lotrSdk.getAllMovies().then((movies) => {
+lotrSdk.getMovies().then((movies) => {
   console.log(movies);
 });
 
@@ -12,7 +12,7 @@ lotrSdk.getQuotesByMovieId('5cd95395de30eff6ebccde57').then((quotes) => {
   console.log(quotes); //The Hobbit Series
 });
 
-lotrSdk.getAllQuotes().then((quotes) => {
+lotrSdk.getQuotes().then((quotes) => {
   console.log(quotes);
 });
 
